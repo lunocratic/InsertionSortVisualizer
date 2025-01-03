@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertion Sort - Carrot Codes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo">
+                <span class="carrot">🥕</span>
+                <div class="logo-text">
+                    <a href="https://ashok-portfolio.vercel.app" target="_blank">
+                        <h1>Carrot Codes</h1>
+                    </a>
+                    <a href="https://ashok-portfolio.vercel.app" target="_blank" class="author">Ashok</a>
+                </div>
+            </div>
+            <button class="menu-toggle">☰</button>
+            <nav class="nav-buttons">
+                <a href="#" class="nav-btn">Home</a>
+                <a href="#" class="nav-btn">More</a>
+                <a href="#" class="nav-btn subscribe-btn">Subscribe</a>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="algorithm-title">
+            <h2 style="display: inline;">Insertion Sort Visualization</h2>
+            <button id="goToCodeBtn" style="margin-left: 10px;">View Code</button>
+        </div>
+        <div class="input-section">
+            <input type="text" id="arrayInput" placeholder="Enter numbers separated by commas (e.g., 64,34,25,12,22)">
+            <div class="buttons">
+                <button id="startBtn">Initialize</button>
+                <button id="nextBtn" disabled>Next Step</button>
+                <button id="resetBtn">Reset</button>
+            </div>
+        </div>
+        <div class="legend">
+            <div class="legend-item">
+                <div class="color-box unsorted"></div>
+                <span>Unsorted</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box comparing"></div>
+                <span>Comparing</span>
+            </div>
+            <div class="legend-item">
+                <div class="color-box sorted"></div>
+                <span>Sorted</span>
+            </div>
+        </div>
+        <div class="visualization-area">
+            <div id="arrayContainer"></div>
+            <div class="comparison-section">
+                <div id="comparisonContainer" class="comparison-indicator">
+                    <div class="comparison-vertical left"></div>
+                    <div class="comparison-vertical right"></div>
+                    <div class="comparison-line"></div>
+                </div>
+                <div class="step-explanation">
+                    <p id="stepText">Enter numbers and click 'Initialize' to begin!</p>
+                    <p id="stepNumber" class="step-number">Step: 0/0</p>
+                </div>
+            </div>
+        </div>
+        <div class="explanation">
+            <h3>🎴 Algorithm Explanation: Playing Cards Style</h3>
+            <div class="explanation-content">
+                <p class="intro">
+                    🎮 Insertion Sort is like sorting a hand of playing cards! Let's see how it works:
+                </p>
+                
+                <div class="steps">
+                    <div class="step">
+                        <h4>1️⃣ Initial Setup</h4>
+                        <p>
+                            🃏 Imagine you're dealing cards one by one from a deck. The first card is automatically considered sorted.
+                        </p>
+                    </div>
+
+                    <div class="step">
+                        <h4>2️⃣ Pick a New Card</h4>
+                        <p>
+                            ➡️ Take the next card and compare it with the cards in your sorted hand, from right to left.
+                        </p>
+                    </div>
+
+                    <div class="step">
+                        <h4>3️⃣ Find the Right Spot</h4>
+                        <p>
+                            🔄 Keep comparing and shifting cards right until you find where your new card belongs.
+                            Just like when you're arranging cards in your hand!
+                        </p>
+                    </div>
+
+                    <div class="step">
+                        <h4>4️⃣ Insert the Card</h4>
+                        <p>
+                            ⬇️ Place the card in its correct position. The left portion of your hand is now sorted up to this point.
+                        </p>
+                    </div>
+
+                    <div class="step">
+                        <h4>5️⃣ Repeat</h4>
+                        <p>
+                            🔁 Keep picking new cards and inserting them into their correct positions until all cards are sorted.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="characteristics">
+                    <h4>📊 Key Characteristics:</h4>
+                    <ul>
+                        <li>✨ Simple and intuitive, just like sorting cards in your hand</li>
+                        <li>⚡ Efficient for small data sets</li>
+                        <li>👍 Great for nearly sorted data</li>
+                        <li>🎯 Stable sorting algorithm (maintains relative order of equal elements)</li>
+                    </ul>
+                </div>
+
+                <div class="complexity">
+                    <h4>⚙️ Performance:</h4>
+                    <ul>
+                        <li>⏱️ Best Case: O(n) - When data is already sorted</li>
+                        <li>⌛ Average Case: O(n²) - When data is randomly ordered</li>
+                        <li>⏰ Worst Case: O(n²) - When data is reverse sorted</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="code-section">
+            <h3>Code Snippets</h3>
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="c">C</button>
+                <button class="lang-btn" data-lang="python">Python</button>
+                <button class="lang-btn" data-lang="java">Java</button>
+                <button class="lang-btn" data-lang="javascript">JavaScript</button>
+                <button class="lang-btn" data-lang="ruby">Ruby</button>
+                <button class="lang-btn" data-lang="go">Go</button>
+            </div>
+            <pre id="codeSnippet" class="code-snippet">
+                // Select a language to see the code
+            </pre>
+            <button id="copyBtn">Copy Code</button>
+            <div id="copyMessage" class="copy-message" style="display: none;">Code copied!</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
