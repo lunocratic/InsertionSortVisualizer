@@ -1,6 +1,6 @@
 # InsertionSortVisualizer 🖥️✨
 
-🔗 **[Check out the live demo here!](https://ashok0076.github.io/InsertionSortVisualizer/)**
+🔗 **[Check out the WEBSITE here!](https://ashok0076.github.io/InsertionSortVisualizer/)**
 
 Welcome to **InsertionSortVisualizer**, an interactive web application designed to visually demonstrate the process of the **Insertion Sort** algorithm. Whether you're a student, educator, or just a sorting enthusiast, this tool will help you understand how sorting works in a fun and engaging way! 🚀
 
