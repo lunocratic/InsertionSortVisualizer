@@ -6,7 +6,7 @@ Yo! This is **InsertionSortVisualizer**, a fun interactive tool to see **Inserti
 
 ---
 
-## Features 🌟
+## Features
 
 - **Step-by-Step Action**: Watch elements move as they get sorted.  
 - **Custom Array Sizes**: Small or big arrays, your choice.  
@@ -25,7 +25,7 @@ Yo! This is **InsertionSortVisualizer**, a fun interactive tool to see **Inserti
 
 ---
 
-## Why Use It 🎯
+## Why Use It 
 
 - Learn how **Insertion Sort** actually works  
 - Perfect for teaching or self-study  
@@ -33,7 +33,7 @@ Yo! This is **InsertionSortVisualizer**, a fun interactive tool to see **Inserti
 
 ---
 
-## Get Started 🚀
+## Get Started 
 
 - 🔗 [Live Demo](https://lunocratic.github.io/InsertionSortVisualizer/)  
 - Contributions welcome! Open issues or PRs 💡  
